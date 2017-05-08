@@ -37,15 +37,15 @@ Make new demo files:
 
 Also used the released JWST ETC to calculate medium backgrounds in the new filters and updated values in the axesim_nircam_*demo.py files:
 
-# Use these as bck_flux_disp values for each filter:
-# F277W    0.40
-# F322W2   0.56
-# F356W    0.34  
-# F410M    0.30 
-# F430M    0.17 
-# F444W    0.96  
-# F460M    0.23  
-# F480M    0.28 
+Use these as bck_flux_disp values for each filter:
+ F277W    0.40
+ F322W2   0.56
+ F356W    0.34  
+ F410M    0.30 
+ F430M    0.17 
+ F444W    0.96  
+ F460M    0.23  
+ F480M    0.28 
 
 
 
@@ -74,7 +74,7 @@ PREVIOUS CHANGES March 2016:
 ./CONF/NIRCam_LWAR_F444W.conf
 
 - Updated zodi backgrounds using values from J Leisenring.
-*** ZODI BACKGROUNDS HAVE INCREASED BY ~2x over the old ones computed from the STScI prototype ETC. Use these bck_flux_disp and bck_flux_dir values for these filters:
+ZODI BACKGROUNDS HAVE INCREASED BY ~2x over the old ones computed from the STScI prototype ETC. Use these bck_flux_disp and bck_flux_dir values for these filters: [NOTE THESE ARE OBSOLETE IN 2017 - see more recent values above]
 Filter   zodi (e-/s/pxl)
 F277W    0.30
 F356W    0.90  
@@ -191,6 +191,7 @@ NOTE: It is also very instructive to do this interactively via:
 *** NOTE that the aXeSIM output images have data units of electrons per second! They must be multiplied by the integration time to get the correct absolute signal, noise, and background levels. However, S/N can be measured from the output files as the are ***
 
 =====================================================================
+
 NOTES How to start aXeSIM as external pyraf package:
 In case that you have downloaded and installed aXeSIM as the external
 IRAF/PyRAF package 'taxesim14', you must make its location available
